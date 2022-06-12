@@ -20,7 +20,7 @@ router.route('/')
 router.route('/showAllmyOrders')
     .get(authenticateUser, getCurrentUserOrders);
 
-router.router('/:id')
+router.route('/:id')
     .get(authenticateUser, getSingleOrder)
     .patch(authenticateUser, updateOrder);
 
